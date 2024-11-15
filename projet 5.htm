@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="font-sans bg-gray-100">
+
+    <header class="bg-green-200 text-black p-6" style="background-image: url(téléchargement\ \(2\).jpg);">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Mon Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#accueil" class="hover:text-indigo-400">Accueil</a></li>
+                    <li><a href="#projets" class="hover:text-indigo-400">Projets</a></li>
+                    <li><a href="#contact" class="hover:text-indigo-400">Contact</a></li>
+                </ul>
+            
+            </nav>
+        </div>
+    </header>
+
+    
+    <section id="accueil" class="relative h-screen bg-cover bg-center" style="background-image: url('1655807337.png');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center text-white flex flex-col justify-center items-center h-full">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold mb-4">Bonjour, je suis NABIL JEBRI </h2>
+            <p class="text-xl sm:text-2xl mb-6">Développeur Web, passionné par la technologie et l'innovation</p>
+            <a href="#projets" class="bg-indigo-500 text-white py-2 px-6 rounded-full hover:bg-indigo-600">Voir mes projets</a>
+        </div>
+    </section>
+
+    
+    <section id="competences" class="py-16 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-semibold mb-12">Mes Compétences</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-xl font-semibold mb-4">Développement Frontend</h4>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-xl font-semibold mb-4">Développement Backend</h4>
+                    <p>Node.js, Express, MongoDB</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-xl font-semibold mb-4">Design et UX/UI</h4>
+                    <p>Figma, Adobe XD, Responsive Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="py-16">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-semibold mb-12">Mes Projets</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="webdesign-3411373_1920-1.jpg" alt="Projet 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h4 class="text-xl font-semibold mb-2">Application Web</h4>
+                    <p class="text-gray-700 mb-4">Une application pour gérer les tâches quotidiennes.</p>
+                    <a href="#" class="text-indigo-500 hover:underline">Voir le projet</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="images.jpg" alt="Projet 2" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h4 class="text-xl font-semibold mb-2">Portfolio Personnel</h4>
+                    <p class="text-gray-700 mb-4">Mon portfolio en ligne avec présentation de mes projets.</p>
+                    <a href="#" class="text-indigo-500 hover:underline">Voir le projet</a>
+                </div>
+                <!-- Projet 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="images (1).jpg" alt="Projet 3" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h4 class="text-xl font-semibold mb-2">E-commerce</h4>
+                    <p class="text-gray-700 mb-4">Un site de vente en ligne avec panier et paiement.</p>
+                    <a href="#" class="text-indigo-500 hover:underline">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-semibold mb-12">Contactez-moi</h3>
+            <form action="#" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-left font-semibold mb-2">Nom</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Votre nom" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-left font-semibold mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Votre email" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-left font-semibold mb-2">Message</label>
+                    <textarea id="message" name="message" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Votre message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <p>&copy; 2024 Mon Portfolio | Tous droits réservés</p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-white hover:text-indigo-400">LinkedIn</a>
+                <a href="#" class="text-white hover:text-indigo-400">GitHub</a>
+                <a href="#" class="text-white hover:text-indigo-400">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
